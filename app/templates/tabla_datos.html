@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tablas de DataFrames</title>
+    <!-- Incluir Bootstrap para estilos predefinidos -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Datos de los DataFrames</h1>
+        <h2> Combined data</h2>
+        <div style="display:inline-block;height:200px" class="table-responsive">
+            {{ tabla_df4 | safe }}
+        </div>
+        <h2> Surebets: </h2>
+        <div style="display:inline-block;height:200px" class="table-responsive">
+            {{ tabla_surebets | safe }}
+        </div>
+        <h2>Bwin</h2>
+        <div style="display:inline-block;height:400px" class="table-responsive">
+            {{ tabla_df1 | safe }}
+        </div>
+
+        <h2>Winamax</h2>
+        <div style="display:inline-block;height:400px" class="table-responsive">
+            {{ tabla_df2 | safe }}
+        </div>
+        <h2>888sport</h2>
+        <div style="display:inline-block;height:800px" class="table-responsive">
+            {{ tabla_df3 | safe }}
+        </div>
+    </div>
+</body>
+</html>
